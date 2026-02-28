@@ -1,0 +1,12 @@
+baseURL = "https://yourusername.github.io/"
+languageCode = "en-us"
+title = "Postcards from Absurdistan"
+theme = "absurdistan"
+paginate = 20
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  description = "Notes on things."
+  author = "Thiyaghessan"

@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="tag-page-header">
+  <p class="tag-page-label">Topic</p>
+  <h1 class="tag-page-title">{{ .Title }}</h1>
+</div>
+
+<ul class="post-list">
+  {{ range .Pages.ByDate.Reverse }}
+  <li class="post-list-item">
+    <div class="post-list-meta">
+      <span class="post-date">{{ .Date.Format "02 Jan 2006" }}</span>
+    </div>
+    <h2 class="post-list-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    {{ if .Summary }}
+    <p class="post-summary">{{ .Summary | plainify | truncate 160 }}</p>
+    {{ end }}
+  </li>
+  {{ end }}
+</ul>
+
+<a href="/tags/" class="back-link">All topics</a>
+{{ end }}

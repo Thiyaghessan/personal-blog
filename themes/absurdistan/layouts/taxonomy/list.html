@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1 class="tags-page-title">Topics</h1>
+<ul class="tags-grid">
+  {{ range .Data.Terms.Alphabetical }}
+  <li class="tags-grid-item">
+    <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+    <span class="tags-grid-count">{{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }}</span>
+  </li>
+  {{ end }}
+</ul>
+
+<a href="/" class="back-link">All posts</a>
+{{ end }}

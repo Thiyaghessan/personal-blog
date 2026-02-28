@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary }}{{ end }}" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+  <div class="site-wrapper">
+
+    <header class="site-header">
+      <a class="site-title" href="/">{{ .Site.Title }}</a>
+      <p class="site-tagline">{{ .Site.Params.description }}</p>
+      <nav class="site-nav">
+        <a href="/">All posts</a>
+        <span class="nav-sep">·</span>
+        <a href="/tags/">Topics</a>
+      </nav>
+    </header>
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="site-footer">
+      <span>{{ .Site.Title }}</span>
+      <span>{{ now.Format "2006" }}</span>
+    </footer>
+
+  </div>
+</body>
+</html>
