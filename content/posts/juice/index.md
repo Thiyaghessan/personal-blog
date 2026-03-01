@@ -18,4 +18,4 @@ But these miss the moments of ecstasy. Iraq and Afghanistan levelled in weeks - 
 
 Foolish are those who say “we” never learn. We have. And this time, we are going to do all the winning and none of the losing. We will not stay and get bogged down in an occupation. Targeted strikes only, made for TV, where we do what we do best. Precision missiles, drone strikes and special forces raids. Kill counts. Decapitated terror cells. High value targets. Pump the numbers. Payloads, bunker busters, discharge. Psychosexual longing. Our hard cocks, their hapless mouths. And you will cheer, and you will love it, because we are finally winning again. Because for us, the action is the juice
 
-![](/heat.jpg)
+![](heat.jpg)
