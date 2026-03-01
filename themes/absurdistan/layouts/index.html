@@ -7,7 +7,7 @@
       {{ if .Params.tags }}
       <div class="post-tags-inline">
         {{ range .Params.tags }}
-        <a href="/tags/{{ . | urlize }}/" class="tag-pill">{{ . }}</a>
+        <a href="{{ printf "tags/%s/" (. | urlize) | relURL }}" class="tag-pill">{{ . }}</a>
         {{ end }}
       </div>
       {{ end }}

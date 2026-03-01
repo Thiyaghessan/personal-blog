@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://thiyaghessan.github.io/personal-blog/"
 languageCode = "en-us"
 title = "Postcards from Absurdistan"
 theme = "absurdistan"

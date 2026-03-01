@@ -7,7 +7,7 @@
       {{ if .Params.tags }}
       <div class="post-tags-inline">
         {{ range .Params.tags }}
-        <a href="/tags/{{ . | urlize }}/" class="tag-pill">{{ . }}</a>
+        <a href="{{ printf "tags/%s/" (. | urlize) | relURL }}" class="tag-pill">{{ . }}</a>
         {{ end }}
       </div>
       {{ end }}
@@ -23,12 +23,12 @@
     <p class="post-footer-label">Filed under</p>
     <div class="post-footer-tags">
       {{ range .Params.tags }}
-      <a href="/tags/{{ . | urlize }}/" class="tag-pill">{{ . }}</a>
+      <a href="{{ printf "tags/%s/" (. | urlize) | relURL }}" class="tag-pill">{{ . }}</a>
       {{ end }}
     </div>
   </footer>
   {{ end }}
 
-  <a href="/" class="back-link">All posts</a>
+  <a href="{{ "/" | relURL }}" class="back-link">All posts</a>
 </article>
 {{ end }}

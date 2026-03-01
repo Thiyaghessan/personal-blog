@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary }}{{ end }}" />
-  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
@@ -13,12 +13,12 @@
   <div class="site-wrapper">
 
     <header class="site-header">
-      <a class="site-title" href="/">{{ .Site.Title }}</a>
+      <a class="site-title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
       <p class="site-tagline">{{ .Site.Params.description }}</p>
       <nav class="site-nav">
-        <a href="/">All posts</a>
+        <a href="{{ "/" | relURL }}">All posts</a>
         <span class="nav-sep">·</span>
-        <a href="/tags/">Topics</a>
+        <a href="{{ "tags/" | relURL }}">Topics</a>
       </nav>
     </header>
 
