@@ -15,7 +15,7 @@ A personal blog. Built with Hugo, hosted on GitHub Pages.
 
 ```bash
 # Clone your repo
-git clone https://github.com/yourusername/postcards-from-absurdistan.git
+git clone https://github.com/Thiyaghessan/postcards-from-absurdistan.git
 cd postcards-from-absurdistan
 
 # Run local dev server (live reload)
