@@ -1,6 +1,6 @@
 baseURL = "https://thiyaghessan.github.io/postcards-from-absurdistan/"
 languageCode = "en-us"
-title = "Postcards from Absurdistan"
+title = "Dawgless"
 theme = "absurdistan"
 paginate = 20
 
